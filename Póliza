@@ -4,17 +4,17 @@
         real costom, costol, costot, coston, costos, costoa, costo
         
         print *
-        write (*,*) 'Tipo de poliza 1 = A y 0 = B'
+        write (*,*) 'Tipo de poliza 1=A y 0=B'
         print *
         read(*,*) tipo
         
         print *
-        write (*,*) '�La persona bebe alcohol? 1 = si y 0 = no'
+        write (*,*) '�La persona bebe alcohol? 1=si y 0=no'
         print *
         read(*,*) bebe
         
         print *
-        write (*,*) '�La persona usa lentes? 1 = si y 0 = no'
+        write (*,*) '�La persona usa lentes? 1=si y 0=no'
         print *
         read(*,*) lentes
         
@@ -35,19 +35,19 @@
                      costo = 950
         end select
         
-        if (lentes == 1) then
+        if (lentes==1) then
            costos = 0.05*costo
         else
             costos = 0
         end if
         
-        if (bebe = 1) then
+        if (bebe==1) then
            costom = 0.10*costo
         else
             costom = 0
         end if
         
-        if (enfermo = 1) then
+        if (enfermo==1) then
            costoa = 0.05*costo
         else
             costoa = 0

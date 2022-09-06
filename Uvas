@@ -40,4 +40,17 @@
         print*
         write(*,*)'Costo total por kilo: ', preciot
         print*
+        
+         print*
+        write(*,*) '¨Cuántos kilos desea comprar?'
+        print*
+        read(*,*)kg
+        
+        pt = preciot*kg
+        
+        print*
+        write(*,*)'Costo total: ', pt
+        print*
+        
+        pause
         end program uvas

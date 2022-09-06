@@ -1,4 +1,4 @@
-           program poliza
+        program poliza
         implicit none
         integer tipo, bebe, edad, lentes, enfermo
         real costom, costol, costot, coston, costos, costoa, costo

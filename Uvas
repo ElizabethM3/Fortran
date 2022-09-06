@@ -1,0 +1,43 @@
+        program uvas
+        
+        implicit none
+        real precio, precios, preciod, preciof, preciog, preciot
+        integer tipo, tam
+        
+        print*
+        write (*,*) 'Tipo de uva: 1=A 0=B'
+        print*
+        read(*,*)tipo
+        
+        print*
+        write(*,*) 'Tama�o de la uva: '
+        print*
+        read(*,*)tam
+        
+        print*
+        write(*,*) 'Precio por kg. de la uva: '
+        print*
+        read(*,*)precio
+        
+        if (tipo==1) then
+           if(tam==1) then
+             precios = precio+0.2
+           else
+             preciod = precio+0.3
+           end if
+        end if
+        
+        if (tipo==0) then
+           if(tam==1) then
+             preciof = precio-0.3
+           else
+             preciog = precio-0.5
+           end if
+        end if
+        
+        preciot = precios + preciod + preciof + preciog
+        
+        print*
+        write(*,*)'Costo total por kilo: ', preciot
+        print*
+        end program uvas

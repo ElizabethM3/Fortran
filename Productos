@@ -1,0 +1,50 @@
+        program productos
+        implicit none
+
+        integer cant, i, c;
+        Real precio, preciot, total;
+        character nombre
+        
+        total = 0
+        
+        print*
+        write(*,*) '¿Cuántos productos desea comprar?'
+        print*
+        read(*,*)cant
+        
+        i=0
+        
+        do while (i < cant)
+        
+         print*
+         write(*,*) 'Ingrese el nombre del producto'
+         print*
+         read(*,*)nombre
+         
+         print*
+         write(*,*) 'Ingrese la cantidad de productos'
+         print*
+         read(*,*)c
+         
+         print*
+         write(*,*) 'Ingrese precio del producto'
+         print*
+         read(*,*)precio
+         
+         preciot = precio * c
+         
+         if (preciot > 1000) then
+          preciot = preciot - (preciot * 0.15)
+         end if
+         
+         total = total + preciot
+        
+         i = i + 1
+        end do
+        
+        print*
+        write(*,*) 'El total es: ', total
+        print*
+        
+        pause
+        end program productos

@@ -1,0 +1,34 @@
+        Inicio
+        Definir variables
+        
+        total = 0
+       
+        imprimir "¿Cuántos productos desea comprar?"
+        leer cant
+        
+        i=0
+        
+        mientras (i < cant)
+        
+         imprimir "Ingrese el nombre del producto"
+         leer nombre
+         
+         imprimir "Ingrese la cantidad de productos"
+         leer c
+         
+         imprimir "Ingrese precio del producto"
+         leer precio
+         
+         preciot = precio * c
+         
+         Sí (preciot > 1000) entonces
+          preciot = preciot - (preciot * 0.15)
+         
+         total = total + preciot
+        
+         i = i + 1
+        
+        imprimir "El total es: ", total
+        
+        Pausa
+        Fin

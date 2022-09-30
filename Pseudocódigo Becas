@@ -1,0 +1,34 @@
+Inicio
+Definicion de variables
+imprimir "¿Que edad tiene?"
+leer edad
+imprimir "¿Cuál es tu promedio general?"
+leer prom
+Sí (edad>18) entonces
+  Sí (prom>=9) entonces
+    Imprimir "Su beca es de $2000.00"
+  
+  Sí (prom>=7.5).and.(prom<9) entonces
+    imprimir "Su beca es de $1000.00"
+    
+  Sí (prom>=6).and.(prom<7.5) entonces
+    imprimir "Su beca es de $500.00"
+    
+  Sí (prom<6) entonces
+    imprimir "Sigue participando"
+    
+Sí (edad<=18) entonces
+  Sí (prom>=9) entonces
+    imprimir "Su beca es de $3000.00"
+
+  Sí (prom>=8).and.(prom<9) entonces
+    imprimir "Su beca es de $2000.00"
+
+  Sí (prom>=6).and.(prom<8) entonces
+    imprimir "Su beca es de $100.00"
+           
+  Sí (prom<6) entonces
+    imprimir "Sigue participando"
+    
+Pausa
+Fin

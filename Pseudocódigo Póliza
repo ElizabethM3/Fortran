@@ -1,0 +1,50 @@
+        Inicio
+        Definir variables
+        
+        imprimir "Tipo de poliza 1=A y 0=B"
+        Leer tipo
+        
+        imprimir "¿La persona bebe alcohol? 1=si y 0=no"
+        Leer bebe
+        
+        imprimir "¿La persona usa lentes? 1=si y 0=no"
+        Leer lentes
+        
+        imprimir "¿La persona tiene alguna enfermedad? 1=si y 0=no2
+        Leer enfermo
+        
+        imprimir "Edad de la persona: "
+        Leer edad
+        
+        Selección (tipo)
+               Caso (1)
+                    costo = 1200
+               Caso (2)
+                     costo = 950
+        
+        Sí (lentes==1) entonces
+           costos = 0.05*costo
+        de lo contrario
+            costos=0
+        
+        Sí (bebe==1) entonces
+           costom = 0.10*costo
+        de lo contrario
+            costom = 0
+        
+        Sí (enfermo==1) entonces
+           costoa = 0.05*costo
+        de lo contrario
+            costoa = 0
+        
+        Sí (edad>40) entonces
+           coston = 0.20*costo
+        de lo contrario
+            costol = 0.10*costo
+        
+        costot = costo + costos + costom + costoa + coston
+
+        imprimir "Costo total: ", costot
+        
+        Pausa
+        Fin

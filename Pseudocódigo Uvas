@@ -1,0 +1,38 @@
+        inicio
+        
+        definir variables
+        
+        imprimir "Tipo de uva: 1=A 0=B"
+        rleer tipo
+        
+        imprimr "Tamaño de la uva: "
+        leer tam
+        
+        imprimir "Precio por kg. de la uva: "
+        leer precio
+        
+        Sí (tipo==1) entonces
+           Sí (tam==1) entonces
+             precios = precio+0.2
+           de lo contrario
+             preciod = precio+0.3
+        
+        Sí (tipo==0) entonces
+           Sí (tam==1) entonces
+             preciof = precio-0.3
+           de lo contrario
+             preciog = precio-0.5
+        
+        preciot = precios + preciod + preciof + preciog
+        
+        imprimir "Costo total por kilo: ", preciot
+        
+        imprimir "¿Cuántos kilos desea comprar?"
+        leer kg
+        
+        pt = preciot*kg
+        
+        imprimir "Costo total: ", pt
+        
+        Pausa
+        Fin
